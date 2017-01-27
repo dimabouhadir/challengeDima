@@ -1,0 +1,8 @@
+{
+  "name": "lebtivity",
+  "dependencies": {
+    "ember": "~2.9.0",
+    "ember-cli-shims": "0.1.3",
+    "momentjs": "~2.10.3"
+  }
+}
