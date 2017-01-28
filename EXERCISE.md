@@ -69,21 +69,20 @@ Projects often contain a [README](https://en.wikipedia.org/wiki/README) file tha
 
 1) The current design is not flexible and does not account for various device dimensions. With today's devices, we cannot build our applications with the assumption of one screen size in mind. This is were [responsive web design comes in](https://en.wikipedia.org/wiki/Responsive_web_design). Since CSS is part of the front end, we will be working in the `ember` directory. CSS stylesheets are located in `ember/app/styles`. Notice that stylesheets have the `.scss` extension (as opposed to `.css`). That is because we are using [SASS](http://sass-lang.com/). No need to dive into that now, we will only be working in CSS at the moment, and since SCSS is a superset of CSS, knowing CSS should be enough for now.
 
-  - We're going to add [CSS media queries](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries) to support different screen sizes:
-    - Between 0 and 420px we need to have one event card per row.
-    - Between 420px and 860px, 2 cards per row.
-    - Between 860px and 1300px, 4 cards per row.
-    - 6 cards for screens wider than 1300px.
+We're going to add [CSS media queries](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries) to support different screen sizes:
 
-  Things to keep in mind while working on it:
-    - We need to preserve the event cards' dimensions.
-    - We need to make sure the images don't get pixelated (which shouldn't happen if event cards remain unchanged).
-    - The spacing _between_ the event cards needs to stay the same. (If there is extra space let it be on the sides
-      by centering the cards).
-    - Make sure "Add an event" button is visible on all breakpoints.
-    - If the last row doesn't contain enough cards, the cards in the last row should be aligned to the left.
+- Between 0 and 420px we need to have one event card per row.
+- Between 420px and 860px, 2 cards per row.
+- Between 860px and 1300px, 4 cards per row.
+- 6 cards for screens wider than 1300px.
 
-  - Commit your changes using git with the message "Make the app responsive".
+Things to keep in mind while working on it:
+- We need to preserve the event cards' dimensions.
+- We need to make sure the images don't get pixelated (which shouldn't happen if event cards remain unchanged).
+- The spacing _between_ the event cards needs to stay the same. (If there is extra space let it be on the sides by centering the cards).
+- Make sure "Add an event" button is visible on all breakpoints.
+- If the last row doesn't contain enough cards, the cards in the last row should be aligned to the left.
+- Commit your changes using git with the message "Make the app responsive".
 
 2) The events are missing a field called "contact" which contains info on how to contact the event organizer. Adding this field will require changes to the database, Rails, and Ember.
   - You will need to add "contact" (a string column) to the events table in the database. To do that, use the rails [Migration command](http://edgeguides.rubyonrails.org/active_record_migrations.html). The reason we don't create it in the database manually is to keep track of what changed so others can also apply that same change.
@@ -124,7 +123,7 @@ Replace the GIF in `app/templates/hourglass.hbs` with the SVG images to animate 
   - You will need to work in the `app/styles/hour-glass.scss` stylesheet and the `app/templates/hourglass.hbs` template.
   - The animation needs to be infinite. Whenever it's done the hour glass needs to rotate and repeat (as seen in the GIF).
   - You will want to use [CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-  to fade in/out the different hour glasses and [CSS transforms](https://developer.mozilla.org/en/docs/Web/CSS/animation)to rotate it.
+  to fade in/out the different hour glasses and [CSS transforms](https://developer.mozilla.org/en/docs/Web/CSS/animation) to rotate it.
   - The animation happens as follows: `hour-glass-1` shows up, then fades away. Half-way through fading, `hour-glass-2` starts fading in.
   Same happens for the rest until the last hour glass is `hour-glass-1` rotated, where it rotates again to repeat the animation.
   - The total duration of one loop of the animation should be 3 seconds.
@@ -143,10 +142,11 @@ You can use something like [JSBin](https://jsbin.com/) to test and execute the c
   ```
 
   Things to look into when working on this:
-     - JavaScript's `console.log` method
-     - [Higher order functions](https://en.wikipedia.org/wiki/Higher-order_function)
+  - JavaScript's `console.log` method
+  - [Higher order functions](https://en.wikipedia.org/wiki/Higher-order_function)
+  - The JavaScript[Spread operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
-  Complete the code in `puzzles/make-crazy.js` and commit with the message "Make functions crazy".
+  Complete the code in the `makeCrazy` function in `puzzles/make-crazy.js` and commit with the message "Make functions crazy".
   You can use [JSBin](https://jsbin.com/) to test and execute the code.
 
 9) Given the code in the file `puzzles/whats-my-name.js`:
