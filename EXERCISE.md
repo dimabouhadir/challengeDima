@@ -118,7 +118,7 @@ we are going to animate the hour glass using solely [SVG](https://developer.mozi
 4 SVG images you will require to build the animation are found in the `public/assets/images/hour-glasses` directory.
 Replace the GIF in `app/templates/hourglass.hbs` with the SVG images to animate them.
 
-  Things to consider for when working on it:
+  Things to consider when working on it:
 
   - You can only use CSS (and the SVGs) to animate it.
   - You will need to work in the `app/styles/hour-glass.scss` stylesheet and the `app/templates/hourglass.hbs` template.
