@@ -3,7 +3,7 @@ function makeCrazy(callback) {
 }
 
 function greeting(name) {
-  return `Hello ${name}!`;
+  return `Hello ${name}`;
 }
 
 function thankYou(firstName, lastName) {
