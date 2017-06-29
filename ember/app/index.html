@@ -13,6 +13,91 @@
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link rel="stylesheet" href="{{rootURL}}assets/lebtivity.css">
 
+    <style>
+
+    @media (max-width: 420px){
+      html,body {max-width: 100%;
+      overflow-x:hidden;
+    }
+        .header__container{width: auto;
+          padding-right: 18px;
+        }
+        .sub-header {
+          padding-left: 18px;
+        }
+        .header__logo{
+          padding-left: 18px;
+        }
+          .container
+          {width: 200px;
+            position: relative;
+            margin: 0 auto;
+              overflow-y: hidden;
+          }
+    }
+
+    @media (min-width:420px) and (max-width: 860px){
+      html,body {max-width: 100%;
+      overflow-x:hidden;}
+        .header__container{width: auto;  padding-right: 18px;}
+
+        .container
+          { width: 460px;
+            overflow-y: hidden;
+            position: relative;
+            margin: 0 auto;
+
+          }
+          .event-summary{
+            margin-left: 20px;
+          }
+          .event-summary:nth-of-type(2n) {
+            margin-left: 0px;
+        }
+
+          .sub-header {
+            padding-left: 18px;
+          }
+          .header__logo{
+            padding-left: 18px;
+          }
+    }
+    @media (min-width:860px) and (max-width: 1300px){
+      html,body {max-width: 100%;
+      overflow-x:hidden;}
+
+        .header__container{width: auto;
+          padding-right: 18px;}
+          .container
+          {width: 880px;
+            position: relative;
+            margin: 0 auto;
+          }
+          .sub-header {
+
+            padding-left: 18px;
+          }
+          .header__logo{
+            padding-left: 18px;
+          }
+
+          .event-summary:nth-of-type(6n+6) {
+            margin-right: 20px; }
+}
+
+    </style>
+
+    <!--  need to add 3 conditions each one sends to a new css file
+    small(1 card) medium (2 cards) large (4 cards) larger is the default with 6 cards
+
+    links are :
+    <link rel='stylesheet' media='screen and (max-width: 700px)' href='css/narrow.css' />
+	<link rel='stylesheet' media='screen and (min-width: 701px) and (max-width: 900px)' href='css/medium.css' />
+	<link rel='stylesheet' media='screen and (min-width: 901px)' href='css/wide.css' />
+-->
+
+
+
     {{content-for "head-footer"}}
   </head>
   <body>

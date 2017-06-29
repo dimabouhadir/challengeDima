@@ -1,0 +1,16 @@
+current directory: /Users/intern/Desktop/project/challenge/rails/vendor/bundle/ruby/2.1.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+/Users/intern/.rvm/rubies/ruby-2.1.10/bin/ruby -r ./siteconf20170628-50913-rc0gwx.rb extconf.rb
+creating Makefile
+
+current directory: /Users/intern/Desktop/project/challenge/rails/vendor/bundle/ruby/2.1.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/intern/Desktop/project/challenge/rails/vendor/bundle/ruby/2.1.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/intern/Desktop/project/challenge/rails/vendor/bundle/ruby/2.1.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 debug_inspector.bundle ./.gem.20170628-50913-16jvawv
+installing default debug_inspector libraries
